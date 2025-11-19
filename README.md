@@ -34,5 +34,21 @@ python image-resizer.py
 
 ## 対応形式
 - 入力: JPG, JPEG, PNG
-- 出力: JPEG# image-resizer
-image-resizer
+- 出力: JPEG
+
+## 注意事項
+- 元の画像ファイルは変更されません（安全に処理できます）
+- 出力ファイル名は元のファイル名を維持し、拡張子のみ `.jpg` に変更されます
+- `images_output/` フォルダが存在しない場合は自動的に作成されます
+
+## プロジェクト構造
+```
+image-resizer/
+├── image-resizer.py    # メインスクリプト
+├── images_input/       # 入力画像フォルダ
+├── images_output/      # 出力画像フォルダ
+└── README.md          # このファイル
+```
+
+## ライセンス
+MIT License
